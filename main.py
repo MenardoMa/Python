@@ -1,4 +1,11 @@
 
+#Nous allons ecrire des instructions et cela sera interpreter par un interpreteur
+"""
+Une instruction c'est une ligne de code ou un ordre qu'on donne pour que notre programme face la chose 
+comme on le souhaite
+"""
+
+
 """
 Les variables : 
 C'est une case memoire qui permet de sauvegarder les informations temporairement en memoire
@@ -21,6 +28,8 @@ En ce qui concerne le variable flotant, decimal (nous devons toujour le separere
 => Pour afficher une variable ou va utiliser la fonction (print), 
 => Pour verifier le type d'une variable on va utiliser la methode (type)
 
+=> En python tout est objet, donc chaque variable ou type est lie a de methode et proprieté
+
 """
 
 _age = 10
@@ -30,6 +39,14 @@ decimal_variable = 10.25
 _bool_true = True
 _bool_false = False
 
-#print(type(_age), type(_sexe), type(decimal_variable))
+_val_a = "Moon"
+_val_b = "Emie"
 
-print(_bool_false)
+chaine = "Je suis une chaine de caractere"
+
+#print(type(_age), type(_sexe), type(decimal_variable))
+#Nous allons utiliser un f string pour injecté les variable (faire l'interpolation)
+
+text = f"Je suis une {_val_a} et j'ai une femme qui s'appelle {_val_b}"
+
+print(text)
